@@ -1,0 +1,67 @@
+body {
+	font-family: Segoe UI, arial, sans-serif;
+    background-color:red;
+	background-image:url("../Images/Erik/lotsofcats.jpg");
+    background-repeat:repeat;
+            
+    background-position:center;
+}
+@keyframes moveAnim {
+        0%   { left:0px; top:0px; }
+        25%  { left:5px; top:0px; }
+        50%  { left:5px; top:5px; }
+        75%  { left:0px; top:5px; }
+        100% { left:0px; top:0px; }
+}
+img.person {
+    width: 120px;
+    float:  left;
+    padding-left:  30px;
+    padding-right:  30px;
+    position: relative;
+    animation: moveAnim 0.2s infinite;
+    
+}
+
+div#bio {
+    width:  80%;
+    padding-left:  30px;
+}
+
+div#logo {
+    padding: 15px;
+    margin: 20px auto 0px auto;
+    text-align: center;
+}
+
+div#container {
+	background-color: orangered;
+	min-width:850px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 300px;
+	margin: 0 auto -4em;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%; 
+    padding-bottom: 50px;
+}
+
+h1, h2, div>a {
+    padding-left:  30px;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:  #FFE97F;
+    outline:  none;
+}
+
+img {border:  0;}
+
+a img {outline:  none;}
