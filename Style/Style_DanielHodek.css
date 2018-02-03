@@ -18,16 +18,27 @@ body {
     font-size: 12pt;
 }
 
-img.person {
-    width: calc(25% - 3rem);
-    float:  left;
+div#img-container {
+    overflow: hidden;
+    width: calc(25% - 2rem);
+    float: left;
     padding: 1rem;
     background: #DDDDDD;
-    box-shadow: inset 0 0 10px #000000; 
+    box-shadow: inset 0 0 10px #000000;
+}
+
+img.person {
+    width: calc(100%);
+    transition: all 10s;
+}
+
+img.person:hover {
+    filter: invert();
+    transform: scale(4) translateX(-25%);
 }
 
 div#bio {
-    width: calc(75% - 2rem);
+    width: calc(75% - 3rem);
     padding: 0 1rem;
     float: right;
     background: #DDDDDD;
@@ -81,12 +92,18 @@ a img {outline:  none;}
   div#logo img {
     width: calc(100% - 2rem);
   }
+
+  div#img-container {
+    float: none;
+    width: calc(100% - 2rem);
+    margin: 0 auto 0 auto;
+  }
   
   img.person {
     float: none;
     display: block;
-    width: 50%;
-    margin: 1rem auto 0 auto;
+    width: 100%;
+    margin: 0rem auto 0 auto;
   }
   
   h1 {
